@@ -12,7 +12,7 @@ class MyString:
     return self._value
   
   def set_value(self, value):
-    if value is str:
+    if type(value) is str:
       self._value = value
     else:
       print("The value must be a string.")
